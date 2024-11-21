@@ -19,4 +19,12 @@ This is a simple web-based Role-Based Access Control (RBAC) system for managing 
 1. Clone this repository to your local machine.
    
    ```bash
-   git clone https://github.com/YourUsername/RBAC-System.git
+   git clone git remote add origin https://github.com/VelamalaSimDeveloper/RBAC.git
+
+
+RBAC-System/
+│
+├── index.html        # Main HTML file
+├── styles.css        # CSS for styling the project
+├── script.js         # JavaScript for managing roles, users, and login functionality
+└── README.md         # This file
