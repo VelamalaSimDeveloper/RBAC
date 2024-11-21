@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBAC System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Login Section -->
+        <section id="login-section" class="form-section">
+            <h2>Login</h2>
+            <input type="text" id="login-username" class="input-field" placeholder="Enter username" />
+            <input type="password" id="login-password" class="input-field" placeholder="Enter password" />
+            <button id="login-btn" class="btn">Login</button>
+        </section>
+
+        <!-- Role Management Section -->
+        <section id="role-management" class="form-section">
+            <h2>Role Management</h2>
+            <div class="input-group">
+                <input type="text" id="new-role" class="input-field" placeholder="Enter new role name" />
+                <select id="permissions-select" class="select-field" multiple>
+                    <option value="read">Read</option>
+                    <option value="write">Write</option>
+                    <option value="delete">Delete</option>
+                </select>
+            </div>
+            <button id="add-role-btn" class="btn">Add Role</button>
+            <ul id="role-list" class="list"></ul>
+        </section>
+
+        <!-- User Management Section -->
+        <section id="user-management" class="form-section">
+            <h2>User Management</h2>
+            <div class="input-group">
+                <input type="text" id="new-user" class="input-field" placeholder="Enter new user name" />
+                <select id="user-role-select" class="select-field" multiple></select>
+                <select id="user-status-select" class="select-field">
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                </select>
+            </div>
+            <button id="add-user-btn" class="btn">Add User</button>
+            <ul id="user-list" class="list"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
